@@ -73,7 +73,7 @@ export function HeroSection() {
           </p>
           <h1 className="mt-6 font-display text-balance text-4xl leading-[1.08] tracking-[-0.03em] text-white sm:text-5xl lg:text-6xl">
             Votre vision mérite{' '}
-            <span className="text-primary-foreground/90 drop-shadow-sm">
+            <span className="text-primary drop-shadow-sm">
               l'excellence
             </span>
           </h1>
