@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const SITE_URL = process.env.SITE_URL ?? 'https://www.example.com'
+const SITE_URL = process.env.SITE_URL ?? 'https://www.rodolphe-optique.bj'
 
 const routes: { path: string; priority: string; changefreq: string }[] = [
   { path: '/', priority: '1.0', changefreq: 'weekly' },

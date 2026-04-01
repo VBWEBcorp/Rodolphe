@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { ArrowRight, Phone } from 'lucide-react'
+import { ArrowRight, Calendar } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -10,16 +10,20 @@ const ease = [0.22, 1, 0.36, 1] as const
 
 const slides = [
   {
-    src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80',
-    alt: 'Espace de travail moderne',
+    src: '/images/ivan-cruz-oQdpelfogoo-unsplash.jpg',
+    alt: 'Collection de montures variées',
   },
   {
-    src: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1920&q=80',
-    alt: 'Équipe en réunion collaborative',
+    src: '/images/chuttersnap-G8ioIHUDfNc-unsplash.jpg',
+    alt: 'Présentoir de montures en boutique',
   },
   {
-    src: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1920&q=80',
-    alt: 'Stratégie digitale et innovation',
+    src: '/images/harpreet-singh-XbPhaw-x0i0-unsplash.jpg',
+    alt: 'Essayage de lunettes en magasin',
+  },
+  {
+    src: '/images/scott-van-daalen-UsALNdok2m4-unsplash.jpg',
+    alt: 'Mur de montures colorées',
   },
 ]
 
@@ -52,7 +56,6 @@ export function HeroSection() {
           />
         </AnimatePresence>
 
-        {/* Dark overlay + gradient for readability */}
         <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20" />
       </div>
@@ -66,22 +69,23 @@ export function HeroSection() {
           className="mx-auto max-w-3xl text-center"
         >
           <p className="font-display text-xs font-semibold tracking-[0.22em] uppercase text-white/70">
-            Bienvenue
+            Opticien à Cotonou, Bénin
           </p>
           <h1 className="mt-6 font-display text-balance text-4xl leading-[1.08] tracking-[-0.03em] text-white sm:text-5xl lg:text-6xl">
-            Votre partenaire pour{' '}
+            Votre vision mérite{' '}
             <span className="text-primary-foreground/90 drop-shadow-sm">
-              réussir en ligne
+              l'excellence
             </span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-white/75 sm:text-xl">
-            Nous accompagnons les entreprises avec des solutions sur mesure,
-            pensées pour durer. Présence digitale, performance et clarté.
+            Examens de vue, lunettes de créateur, lentilles de contact et
+            solaires haut de gamme. L'expertise optique au service de votre
+            regard depuis Cotonou.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" className="group" asChild>
               <Link to="/contact">
-                Prendre contact
+                Prendre rendez-vous
                 <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </Link>
             </Button>
@@ -92,7 +96,7 @@ export function HeroSection() {
               asChild
             >
               <Link to="/services">
-                <Phone className="size-4" />
+                <Calendar className="size-4" />
                 Découvrir nos services
               </Link>
             </Button>

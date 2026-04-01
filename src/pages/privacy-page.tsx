@@ -6,7 +6,7 @@ import { Breadcrumb } from '@/components/ui/breadcrumb'
 import { siteConfig } from '@/lib/seo'
 
 const description =
-  'Politique de confidentialité — découvrez comment nous collectons, utilisons et protégeons vos données personnelles conformément au RGPD.'
+  'Politique de confidentialité de Rodolphe Optique — découvrez comment nous collectons, utilisons et protégeons vos données personnelles.'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -45,40 +45,37 @@ export function PrivacyPage() {
             Politique de confidentialité
           </h1>
           <p className="mt-4 text-sm text-muted-foreground">
-            Dernière mise à jour : [JJ/MM/AAAA]
+            Dernière mise à jour : 29 mars 2026
           </p>
 
           <article className="mt-10 space-y-10 text-sm leading-relaxed text-muted-foreground [&_h2]:font-display [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:text-foreground [&_h3]:text-sm [&_h3]:font-semibold [&_h3]:text-foreground">
 
-            {/* Introduction */}
             <section className="space-y-3">
               <p>
                 La société {siteConfig.name} ({'"'}nous{'"'}, {'"'}notre{'"'},{' '}
                 {'"'}nos{'"'}) accorde une grande importance à la protection de
-                vos données personnelles. La présente politique de
-                confidentialité décrit les données que nous collectons, pourquoi
-                nous les collectons et comment nous les utilisons, conformément
-                au Règlement Général sur la Protection des Données (RGPD —
-                Règlement UE 2016/679) et à la loi Informatique et Libertés.
+                vos données personnelles. La présente politique décrit les
+                données que nous collectons, pourquoi nous les collectons et
+                comment nous les utilisons, conformément à la loi n° 2009-09
+                du 22 mai 2009 portant protection des données à caractère
+                personnel en République du Bénin.
               </p>
             </section>
 
-            {/* 1. Responsable du traitement */}
             <section className="space-y-3">
               <h2>1. Responsable du traitement</h2>
               <p>Le responsable du traitement des données est :</p>
               <ul className="list-inside list-disc space-y-1 pl-1">
                 <li>{siteConfig.name}</li>
                 <li>
-                  {siteConfig.address.street}, {siteConfig.address.postalCode}{' '}
-                  {siteConfig.address.city}
+                  {siteConfig.address.street},{' '}
+                  {siteConfig.address.city}, Bénin
                 </li>
                 <li>Email : {siteConfig.email}</li>
                 <li>Téléphone : {siteConfig.phone}</li>
               </ul>
             </section>
 
-            {/* 2. Données collectées */}
             <section className="space-y-3">
               <h2>2. Données personnelles collectées</h2>
               <p>
@@ -92,7 +89,7 @@ export function PrivacyPage() {
               <ul className="list-inside list-disc space-y-1 pl-1">
                 <li>Nom et prénom</li>
                 <li>Adresse email</li>
-                <li>Numéro de téléphone (optionnel)</li>
+                <li>Numéro de téléphone</li>
                 <li>Contenu du message</li>
               </ul>
 
@@ -100,25 +97,20 @@ export function PrivacyPage() {
                 b) Données collectées automatiquement
               </h3>
               <ul className="list-inside list-disc space-y-1 pl-1">
-                <li>Adresse IP (anonymisée si un outil d'analyse est utilisé)</li>
+                <li>Adresse IP</li>
                 <li>Type de navigateur et système d'exploitation</li>
                 <li>Pages consultées et durée de visite</li>
-                <li>Source de trafic (referrer)</li>
               </ul>
             </section>
 
-            {/* 3. Finalités et base légale */}
             <section className="space-y-3">
-              <h2>3. Finalités et base légale du traitement</h2>
+              <h2>3. Finalités du traitement</h2>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse text-sm">
                   <thead>
                     <tr className="border-b border-border/60">
                       <th className="py-2 pr-4 text-left font-semibold text-foreground">
                         Finalité
-                      </th>
-                      <th className="py-2 pr-4 text-left font-semibold text-foreground">
-                        Base légale
                       </th>
                       <th className="py-2 text-left font-semibold text-foreground">
                         Durée de conservation
@@ -127,23 +119,19 @@ export function PrivacyPage() {
                   </thead>
                   <tbody className="divide-y divide-border/40">
                     <tr>
-                      <td className="py-2.5 pr-4">Répondre à vos demandes de contact</td>
-                      <td className="py-2.5 pr-4">Consentement (art. 6.1.a RGPD)</td>
+                      <td className="py-2.5 pr-4">Répondre à vos demandes de rendez-vous</td>
                       <td className="py-2.5">3 ans après le dernier contact</td>
                     </tr>
                     <tr>
-                      <td className="py-2.5 pr-4">Établir un devis ou une proposition</td>
-                      <td className="py-2.5 pr-4">Mesures précontractuelles (art. 6.1.b)</td>
-                      <td className="py-2.5">3 ans après le dernier contact</td>
+                      <td className="py-2.5 pr-4">Suivi de votre santé visuelle</td>
+                      <td className="py-2.5">Durée de la relation client</td>
                     </tr>
                     <tr>
                       <td className="py-2.5 pr-4">Analyser la fréquentation du site</td>
-                      <td className="py-2.5 pr-4">Intérêt légitime (art. 6.1.f)</td>
                       <td className="py-2.5">25 mois maximum</td>
                     </tr>
                     <tr>
                       <td className="py-2.5 pr-4">Assurer la sécurité du site</td>
-                      <td className="py-2.5 pr-4">Intérêt légitime (art. 6.1.f)</td>
                       <td className="py-2.5">12 mois</td>
                     </tr>
                   </tbody>
@@ -151,7 +139,6 @@ export function PrivacyPage() {
               </div>
             </section>
 
-            {/* 4. Destinataires */}
             <section className="space-y-3">
               <h2>4. Destinataires des données</h2>
               <p>
@@ -162,92 +149,52 @@ export function PrivacyPage() {
               <ul className="list-inside list-disc space-y-1 pl-1">
                 <li>
                   À nos sous-traitants techniques (hébergeur, prestataire
-                  email), dans le cadre strict de leurs missions et sous
-                  contrat de confidentialité
+                  email), dans le cadre strict de leurs missions
                 </li>
                 <li>
-                  Aux autorités compétentes si la loi l'exige (réquisition
-                  judiciaire)
+                  Aux autorités compétentes si la loi l'exige
                 </li>
               </ul>
             </section>
 
-            {/* 5. Transferts hors UE */}
             <section className="space-y-3">
-              <h2>5. Transferts de données hors Union européenne</h2>
-              <p>
-                Certains de nos sous-traitants peuvent être situés en dehors de
-                l'Union européenne. Dans ce cas, le transfert est encadré par
-                des garanties appropriées : décision d'adéquation de la
-                Commission européenne, clauses contractuelles types ou tout
-                autre mécanisme reconnu par le RGPD.
-              </p>
-            </section>
-
-            {/* 6. Cookies */}
-            <section className="space-y-3">
-              <h2>6. Cookies</h2>
+              <h2>5. Cookies</h2>
               <h3 className="pt-2">a) Cookies strictement nécessaires</h3>
               <p>
                 Ces cookies sont indispensables au fonctionnement du site
-                (préférences de thème, session). Ils ne nécessitent pas votre
+                (préférences de thème). Ils ne nécessitent pas votre
                 consentement.
               </p>
 
               <h3 className="pt-2">b) Cookies d'analyse (optionnels)</h3>
               <p>
-                [Si applicable] Nous utilisons [Google Analytics / Plausible /
-                Matomo / …] pour analyser la fréquentation du site. Ces cookies
-                ne sont déposés qu'après votre consentement explicite.
-              </p>
-              <p>
-                Vous pouvez à tout moment modifier vos préférences en matière de
-                cookies via le [bandeau de consentement / lien paramètres
-                cookies] ou dans les réglages de votre navigateur.
-              </p>
-
-              <h3 className="pt-2">c) Cookies tiers</h3>
-              <p>
-                Aucun cookie publicitaire ou de profilage n'est utilisé sur ce
-                site.
+                Si un outil d'analyse est utilisé, ces cookies ne sont déposés
+                qu'après votre consentement explicite.
               </p>
             </section>
 
-            {/* 7. Vos droits */}
             <section className="space-y-3">
-              <h2>7. Vos droits</h2>
+              <h2>6. Vos droits</h2>
               <p>
-                Conformément au RGPD et à la loi Informatique et Libertés, vous
-                disposez des droits suivants sur vos données personnelles :
+                Conformément à la loi béninoise sur la protection des données
+                personnelles, vous disposez des droits suivants :
               </p>
               <ul className="list-inside list-disc space-y-1 pl-1">
                 <li>
-                  <strong>Droit d'accès</strong> — obtenir la confirmation du
-                  traitement de vos données et en recevoir une copie
+                  <strong>Droit d'accès</strong> — obtenir une copie de vos
+                  données
                 </li>
                 <li>
                   <strong>Droit de rectification</strong> — corriger des données
-                  inexactes ou incomplètes
+                  inexactes
                 </li>
                 <li>
                   <strong>Droit à l'effacement</strong> — demander la
-                  suppression de vos données (dans les limites légales)
-                </li>
-                <li>
-                  <strong>Droit à la limitation</strong> — restreindre
-                  temporairement le traitement de vos données
-                </li>
-                <li>
-                  <strong>Droit à la portabilité</strong> — recevoir vos données
-                  dans un format structuré et lisible
+                  suppression de vos données
                 </li>
                 <li>
                   <strong>Droit d'opposition</strong> — vous opposer au
-                  traitement de vos données pour des motifs légitimes
-                </li>
-                <li>
-                  <strong>Droit de retirer votre consentement</strong> — à tout
-                  moment, sans affecter la licéité du traitement antérieur
+                  traitement de vos données
                 </li>
               </ul>
               <p>
@@ -262,58 +209,29 @@ export function PrivacyPage() {
                 dans un délai maximum de 30 jours.
               </p>
               <p>
-                Si vous estimez que le traitement de vos données constitue une
-                violation de vos droits, vous pouvez introduire une réclamation
-                auprès de la{' '}
-                <a
-                  href="https://www.cnil.fr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-primary underline underline-offset-4 hover:text-primary/80"
-                >
-                  CNIL
-                </a>{' '}
-                (Commission Nationale de l'Informatique et des Libertés).
+                En cas de litige, vous pouvez saisir l'Autorité de Protection
+                des Données Personnelles (APDP) du Bénin.
               </p>
             </section>
 
-            {/* 8. Sécurité */}
             <section className="space-y-3">
-              <h2>8. Sécurité des données</h2>
+              <h2>7. Sécurité des données</h2>
               <p>
                 Nous mettons en œuvre des mesures techniques et
-                organisationnelles appropriées pour protéger vos données contre
-                tout accès non autorisé, perte, altération ou divulgation :
-                chiffrement SSL/TLS, accès restreints, sauvegardes régulières,
-                mises à jour de sécurité.
+                organisationnelles appropriées pour protéger vos données :
+                chiffrement SSL/TLS, accès restreints, sauvegardes régulières.
               </p>
             </section>
 
-            {/* 9. Mineurs */}
             <section className="space-y-3">
-              <h2>9. Données des mineurs</h2>
+              <h2>8. Modification de la politique</h2>
               <p>
-                Ce site ne s'adresse pas aux mineurs de moins de 16 ans. Nous ne
-                collectons pas sciemment de données personnelles relatives aux
-                mineurs. Si nous découvrons qu'un mineur nous a transmis des
-                données personnelles, nous les supprimerons dans les meilleurs
-                délais.
+                Nous nous réservons le droit de modifier cette politique à tout
+                moment. La version en vigueur est celle accessible sur cette
+                page, identifiée par sa date de dernière mise à jour.
               </p>
             </section>
 
-            {/* 10. Modifications */}
-            <section className="space-y-3">
-              <h2>10. Modification de la politique</h2>
-              <p>
-                Nous nous réservons le droit de modifier la présente politique de
-                confidentialité à tout moment. La version en vigueur est celle
-                accessible sur cette page, identifiée par sa date de dernière
-                mise à jour. Nous vous encourageons à la consulter
-                régulièrement.
-              </p>
-            </section>
-
-            {/* Lien vers mentions légales */}
             <section className="space-y-3 rounded-xl border border-border/60 bg-muted/20 p-5">
               <p className="text-foreground">
                 Consultez également nos{' '}

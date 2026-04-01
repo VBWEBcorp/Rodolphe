@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Heart, Lightbulb, Users } from 'lucide-react'
+import { Eye, Heart, Users } from 'lucide-react'
 
 import { SeoHead } from '@/components/seo/seo-head'
 import { breadcrumbJsonLd, webPageJsonLd } from '@/components/seo/json-ld'
@@ -12,24 +12,24 @@ const ease = [0.22, 1, 0.36, 1] as const
 
 const values = [
   {
-    icon: Heart,
-    title: 'Proximité',
-    desc: 'Un interlocuteur unique, disponible, qui connaît votre projet sur le bout des doigts.',
+    icon: Eye,
+    title: 'Expertise',
+    desc: 'Nos opticiens diplômés maîtrisent les dernières technologies et vous garantissent un examen de vue rigoureux.',
   },
   {
-    icon: Lightbulb,
-    title: 'Clarté',
-    desc: 'Pas de jargon inutile. Des explications simples, des livrables concrets.',
+    icon: Heart,
+    title: 'Bienveillance',
+    desc: 'Chaque client est unique. Nous prenons le temps d\'écouter vos besoins et de vous accompagner sans pression.',
   },
   {
     icon: Users,
-    title: 'Sur mesure',
-    desc: "Chaque projet est différent. Nous adaptons nos solutions à votre réalité, pas l'inverse.",
+    title: 'Proximité',
+    desc: 'Ancrés à Cotonou depuis 15 ans, nous connaissons les besoins spécifiques de notre communauté et y répondons avec passion.',
   },
 ] as const
 
 const description =
-  'Découvrez notre histoire, nos valeurs et notre équipe. Nous accompagnons les entreprises dans leur développement digital.'
+  'Découvrez Rodolphe Optique, votre opticien de confiance à Cotonou. Notre histoire, nos valeurs et notre engagement pour votre santé visuelle.'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -54,9 +54,9 @@ export function AboutPage() {
 
       <PageHero
         eyebrow="À propos"
-        title="Une équipe engagée à vos côtés"
-        description="Nous croyons que chaque entreprise mérite une présence en ligne à la hauteur de ses ambitions. Depuis notre création, nous accompagnons artisans, PME et indépendants avec des solutions simples, efficaces et soignées."
-        image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80"
+        title="Votre vision, notre vocation"
+        description="Depuis plus de 15 ans, Rodolphe Optique allie expertise optique, montures de qualité et accompagnement humain pour offrir à chaque client le meilleur de la vision à Cotonou."
+        image="/images/ivan-cruz-oQdpelfogoo-unsplash.jpg"
         breadcrumb="À propos"
       />
 
@@ -64,7 +64,7 @@ export function AboutPage() {
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <SectionTitle
             eyebrow="Nos valeurs"
-            title="Ce qui nous guide au quotidien"
+            title="Ce qui guide notre engagement"
           />
           <div className="mt-14 grid gap-5 md:grid-cols-3">
             {values.map((v, i) => (
@@ -96,7 +96,6 @@ export function AboutPage() {
         </div>
       </section>
 
-      {/* Galerie photos */}
       <section className="border-b border-border/60">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <SectionTitle
@@ -106,20 +105,20 @@ export function AboutPage() {
           <div className="mt-14 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
             {[
               {
-                src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80',
-                alt: 'Équipe en brainstorming',
+                src: '/images/ivan-cruz-oQdpelfogoo-unsplash.jpg',
+                alt: 'Collection de montures variées',
               },
               {
-                src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80',
-                alt: 'Espace de travail lumineux',
+                src: '/images/chuttersnap-G8ioIHUDfNc-unsplash.jpg',
+                alt: 'Présentoir de montures en boutique',
               },
               {
-                src: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=600&q=80',
-                alt: 'Stratégie et planification',
+                src: '/images/harpreet-singh-XbPhaw-x0i0-unsplash.jpg',
+                alt: 'Essayage de lunettes en magasin',
               },
               {
-                src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=80',
-                alt: 'Collaboration au quotidien',
+                src: '/images/scott-van-daalen-UsALNdok2m4-unsplash.jpg',
+                alt: 'Mur de montures colorées',
               },
             ].map((img, i) => (
               <motion.div

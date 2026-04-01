@@ -1,19 +1,19 @@
 export const siteConfig = {
-  name: 'Nom Entreprise',
-  url: 'https://www.example.com',
-  locale: 'fr_FR',
+  name: 'Rodolphe Optique',
+  url: 'https://www.rodolphe-optique.bj',
+  locale: 'fr_BJ',
   description:
-    'Votre entreprise — description courte et percutante de votre activité. Adaptez cette ligne à votre domaine.',
-  ogImage: 'https://www.example.com/og.png',
-  twitterHandle: '@votrecompte',
+    'Votre opticien de confiance à Cotonou — examens de vue, lunettes de créateur, lentilles de contact et solaires. Expertise et style au service de votre vision.',
+  ogImage: 'https://www.rodolphe-optique.bj/og.png',
+  twitterHandle: '@rodolpheoptique',
   themeColor: '#6d28d9',
-  phone: '+33 1 23 45 67 89',
-  email: 'contact@example.com',
+  phone: '+229 21 31 45 67',
+  email: 'contact@rodolphe-optique.bj',
   address: {
-    street: '12 Rue Exemple',
-    city: 'Paris',
-    postalCode: '75001',
-    country: 'FR',
+    street: '127 Boulevard Saint-Michel, Cadjèhoun',
+    city: 'Cotonou',
+    postalCode: '',
+    country: 'BJ',
   },
 } as const
 

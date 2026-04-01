@@ -24,8 +24,8 @@ export function StorySection() {
             />
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border/80 bg-muted/40 shadow-[var(--shadow-md)] ring-1 ring-foreground/5">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-                alt="Équipe au travail autour d'une table"
+                src="/images/ivan-cruz-oQdpelfogoo-unsplash.jpg"
+                alt="Examen de vue dans notre centre optique"
                 className="size-full object-cover"
                 loading="lazy"
                 width={800}
@@ -45,20 +45,22 @@ export function StorySection() {
               Notre histoire
             </p>
             <h2 className="font-display text-balance text-3xl leading-[1.12] tracking-[-0.02em] text-foreground sm:text-4xl">
-              Une approche humaine, des résultats concrets
+              L'expertise optique au cœur de Cotonou
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Depuis nos débuts, nous croyons qu'un bon site commence par une
-              bonne écoute. Nous prenons le temps de comprendre votre métier,
-              vos clients et vos objectifs avant de concevoir quoi que ce soit.
+              Depuis plus de 15 ans, Rodolphe Optique accompagne les familles
+              béninoises dans le soin de leur vue. Notre engagement : allier
+              technologie de pointe, montures tendance et un accueil
+              chaleureux dans un cadre moderne.
             </p>
             <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Le résultat : des projets qui vous ressemblent, qui parlent à
-              votre audience, et qui travaillent pour vous 24h/24.
+              Chaque client bénéficie d'un suivi personnalisé, de l'examen
+              visuel au choix de la monture idéale, parce que votre regard
+              mérite toute notre attention.
             </p>
             <Button variant="outline" className="group" asChild>
               <Link to="/a-propos">
-                Lire plus
+                En savoir plus
                 <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </Link>
             </Button>

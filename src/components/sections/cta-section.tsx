@@ -23,18 +23,18 @@ export function CtaSection() {
           />
           <div className="relative space-y-6">
             <p className="font-display text-xs font-semibold tracking-[0.22em] text-primary uppercase">
-              Prêt à démarrer ?
+              Prêt à voir la vie autrement ?
             </p>
             <h2 className="mx-auto max-w-xl font-display text-balance text-3xl tracking-tight text-foreground sm:text-4xl">
-              Parlons de votre projet
+              Prenez rendez-vous dès aujourd'hui
             </h2>
             <p className="mx-auto max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Un échange simple et sans engagement pour comprendre vos besoins et
-              vous proposer la meilleure approche.
+              Un examen de vue complet, des conseils personnalisés et un large
+              choix de montures vous attendent dans notre boutique de Cotonou.
             </p>
             <Button size="lg" className="group" asChild>
               <Link to="/contact">
-                Demander un devis gratuit
+                Prendre rendez-vous
                 <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
               </Link>
             </Button>

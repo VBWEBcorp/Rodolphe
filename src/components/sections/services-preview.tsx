@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Globe, Palette, Search, ShieldCheck } from 'lucide-react'
+import { ArrowRight, Eye, Glasses, SunMedium, Contact } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 import { SectionTitle } from '@/components/ui/section-title'
@@ -8,24 +8,24 @@ import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/ca
 
 const services = [
   {
-    icon: Globe,
-    title: 'Création de site web',
-    desc: 'Sites vitrines modernes, responsive et optimisés pour convertir vos visiteurs en clients.',
+    icon: Eye,
+    title: 'Examen de vue',
+    desc: 'Bilan visuel complet réalisé avec des équipements de dernière génération pour un diagnostic précis.',
   },
   {
-    icon: Search,
-    title: 'Référencement SEO',
-    desc: 'Stratégie de contenu et optimisation technique pour apparaître en première page Google.',
+    icon: Glasses,
+    title: 'Lunettes de vue',
+    desc: 'Large sélection de montures de créateurs et verres correcteurs haute définition adaptés à chaque besoin.',
   },
   {
-    icon: Palette,
-    title: 'Identité visuelle',
-    desc: 'Logo, charte graphique et supports cohérents qui reflètent votre image de marque.',
+    icon: SunMedium,
+    title: 'Lunettes de soleil',
+    desc: 'Protection UV optimale alliée au style — solaires correctrices ou non, pour tous les goûts.',
   },
   {
-    icon: ShieldCheck,
-    title: 'Maintenance & support',
-    desc: 'Mises à jour, sécurité et accompagnement continu pour garder votre site performant.',
+    icon: Contact,
+    title: 'Lentilles de contact',
+    desc: 'Adaptation personnalisée de lentilles journalières, mensuelles ou progressives avec suivi complet.',
   },
 ] as const
 
@@ -37,8 +37,8 @@ export function ServicesPreview() {
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
         <SectionTitle
           eyebrow="Nos services"
-          title="Des solutions adaptées à votre activité"
-          description="Quel que soit votre secteur, nous vous aidons à développer votre présence et à atteindre vos objectifs."
+          title="Prenez soin de votre vue"
+          description="De l'examen de vue au choix de vos montures, nous vous accompagnons à chaque étape avec expertise et bienveillance."
         />
         <div className="mt-14 grid gap-5 sm:grid-cols-2">
           {services.map((s, i) => (

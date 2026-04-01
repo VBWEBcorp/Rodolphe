@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Clock, Mail, MapPin, Phone } from 'lucide-react'
 
 import { SeoHead } from '@/components/seo/seo-head'
 import { breadcrumbJsonLd, webPageJsonLd } from '@/components/seo/json-ld'
@@ -13,7 +13,7 @@ import { siteConfig } from '@/lib/seo'
 const ease = [0.22, 1, 0.36, 1] as const
 
 const description =
-  'Contactez-nous pour discuter de votre projet. Devis gratuit, réponse rapide.'
+  'Prenez rendez-vous chez Rodolphe Optique à Cotonou. Examen de vue, conseil personnalisé — contactez-nous par téléphone, email ou en boutique.'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -38,9 +38,9 @@ export function ContactPage() {
 
       <PageHero
         eyebrow="Contact"
-        title="Parlons de votre projet"
-        description="Remplissez le formulaire ci-dessous ou contactez-nous directement. Nous répondons sous 24h."
-        image="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&q=80"
+        title="Prenez rendez-vous"
+        description="Remplissez le formulaire ou contactez-nous directement. Nous vous répondons dans les plus brefs délais."
+        image="/images/chuttersnap-G8ioIHUDfNc-unsplash.jpg"
         breadcrumb="Contact"
       />
 
@@ -56,7 +56,7 @@ export function ContactPage() {
               <Card className="rounded-2xl border-border/80 bg-card/70 shadow-[var(--shadow-md)] ring-1 ring-foreground/5">
                 <CardHeader>
                   <CardTitle className="font-display text-lg">
-                    Envoyer un message
+                    Demander un rendez-vous
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -70,7 +70,7 @@ export function ContactPage() {
                         <Input
                           id="firstname"
                           name="firstname"
-                          placeholder="Jean"
+                          placeholder="Rodolphe"
                           autoComplete="given-name"
                           className="h-11 rounded-xl"
                         />
@@ -80,7 +80,7 @@ export function ContactPage() {
                         <Input
                           id="lastname"
                           name="lastname"
-                          placeholder="Dupont"
+                          placeholder="Agossou"
                           autoComplete="family-name"
                           className="h-11 rounded-xl"
                         />
@@ -92,34 +92,34 @@ export function ContactPage() {
                         id="email"
                         name="email"
                         type="email"
-                        placeholder="jean@entreprise.fr"
+                        placeholder="rodolphe@email.com"
                         autoComplete="email"
                         className="h-11 rounded-xl"
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Téléphone (optionnel)</Label>
+                      <Label htmlFor="phone">Téléphone</Label>
                       <Input
                         id="phone"
                         name="phone"
                         type="tel"
-                        placeholder="06 12 34 56 78"
+                        placeholder="+229 97 12 34 56"
                         autoComplete="tel"
                         className="h-11 rounded-xl"
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="message">Votre message</Label>
+                      <Label htmlFor="message">Votre besoin</Label>
                       <textarea
                         id="message"
                         name="message"
                         rows={5}
-                        placeholder="Décrivez votre projet en quelques mots..."
+                        placeholder="Décrivez votre besoin : examen de vue, renouvellement de lunettes, lentilles de contact..."
                         className="w-full rounded-xl border border-input bg-transparent px-3 py-2.5 text-sm leading-relaxed text-foreground transition-colors placeholder:text-muted-foreground focus-visible:border-ring focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
                       />
                     </div>
                     <Button type="submit" size="lg" className="w-full">
-                      Envoyer le message
+                      Envoyer ma demande
                     </Button>
                   </form>
                 </CardContent>
@@ -178,8 +178,24 @@ export function ContactPage() {
                       <p className="text-sm text-muted-foreground">
                         {siteConfig.address.street}
                         <br />
-                        {siteConfig.address.postalCode}{' '}
-                        {siteConfig.address.city}
+                        {siteConfig.address.city}, Bénin
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/15">
+                      <Clock className="size-4" aria-hidden />
+                    </span>
+                    <div>
+                      <p className="text-sm font-semibold text-foreground">
+                        Horaires d'ouverture
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        Lun – Ven : 8h00 – 18h30
+                        <br />
+                        Sam : 9h00 – 14h00
+                        <br />
+                        Dim : Fermé
                       </p>
                     </div>
                   </div>
@@ -187,13 +203,14 @@ export function ContactPage() {
               </Card>
 
               <div className="overflow-hidden rounded-2xl border border-border/80 bg-muted/30 shadow-[var(--shadow-sm)] ring-1 ring-foreground/5">
-                <div className="flex h-56 items-center justify-center text-sm text-muted-foreground">
-                  <p>
-                    Intégrez ici votre carte Google Maps
-                    <br />
-                    <span className="text-xs">(iframe ou API)</span>
-                  </p>
-                </div>
+                <iframe
+                  title="Localisation Rodolphe Optique, Cotonou"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5!2d2.4075!3d6.3654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCotonou%2C+B%C3%A9nin!5e0!3m2!1sfr!2sbj!4v1"
+                  className="h-56 w-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
               </div>
             </motion.div>
           </div>

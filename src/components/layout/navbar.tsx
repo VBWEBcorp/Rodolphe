@@ -47,7 +47,7 @@ export function Navbar() {
         <div className="hidden items-center gap-2 md:flex">
           <ThemeToggle />
           <Button size="sm" asChild>
-            <Link to="/contact">Nous contacter</Link>
+            <Link to="/contact">Prendre RDV</Link>
           </Button>
         </div>
 
@@ -97,7 +97,7 @@ export function Navbar() {
               <div className="mt-2 border-t border-border/60 pt-4">
                 <Button className="w-full" asChild>
                   <Link to="/contact" onClick={() => setOpen(false)}>
-                    Nous contacter
+                    Prendre RDV
                   </Link>
                 </Button>
               </div>

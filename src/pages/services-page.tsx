@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion'
 import {
-  BarChart3,
-  Code,
-  Globe,
-  Megaphone,
-  Palette,
-  Search,
+  Baby,
+  Contact,
+  Eye,
+  Glasses,
+  HeartPulse,
+  Microscope,
   ShieldCheck,
-  Smartphone,
+  SunMedium,
 } from 'lucide-react'
 
 import { SeoHead } from '@/components/seo/seo-head'
@@ -29,49 +29,49 @@ const ease = [0.22, 1, 0.36, 1] as const
 
 const services = [
   {
-    icon: Globe,
-    title: 'Création de site vitrine',
-    desc: 'Un site moderne, rapide et responsive qui présente clairement votre activité et inspire confiance à vos visiteurs.',
+    icon: Eye,
+    title: 'Examen de vue complet',
+    desc: 'Bilan visuel approfondi avec des équipements de dernière génération : autoréfractomètre, tonomètre et lampe à fente.',
   },
   {
-    icon: Smartphone,
-    title: 'Application web',
-    desc: 'Outils métier, plateformes de réservation, espaces clients — des applications pensées pour simplifier votre quotidien.',
+    icon: Glasses,
+    title: 'Lunettes de vue',
+    desc: 'Plus de 500 montures de marques internationales et locales, avec des verres unifocaux, progressifs ou de bureau.',
   },
   {
-    icon: Search,
-    title: 'Référencement naturel (SEO)',
-    desc: 'Optimisation technique, contenu stratégique et suivi de positionnement pour gagner en visibilité sur Google.',
+    icon: SunMedium,
+    title: 'Lunettes de soleil',
+    desc: 'Protection UV certifiée et style garanti — solaires correctrices ou non, polarisées ou photochromiques.',
   },
   {
-    icon: Palette,
-    title: 'Identité visuelle',
-    desc: 'Logo, charte graphique, supports de communication : une image cohérente qui vous ressemble.',
+    icon: Contact,
+    title: 'Lentilles de contact',
+    desc: 'Adaptation sur mesure de lentilles souples, rigides ou toriques, avec suivi personnalisé et contrôles réguliers.',
   },
   {
-    icon: Megaphone,
-    title: 'Communication digitale',
-    desc: 'Stratégie de contenu, réseaux sociaux et campagnes pour développer votre audience en ligne.',
+    icon: Baby,
+    title: 'Optique enfant',
+    desc: 'Montures résistantes et ludiques adaptées aux plus jeunes, avec un accompagnement doux et patient.',
   },
   {
-    icon: Code,
-    title: 'Développement sur mesure',
-    desc: 'Intégrations, automatisations, API — des solutions techniques taillées pour vos besoins spécifiques.',
+    icon: Microscope,
+    title: 'Dépistage visuel',
+    desc: 'Détection précoce de pathologies comme le glaucome, la cataracte ou la dégénérescence maculaire.',
   },
   {
     icon: ShieldCheck,
-    title: 'Maintenance & sécurité',
-    desc: 'Mises à jour, sauvegardes, monitoring et corrections pour un site toujours performant et sécurisé.',
+    title: 'Garantie & ajustements',
+    desc: 'Garantie complète sur toutes nos montures et verres, ajustements gratuits et réparations en boutique.',
   },
   {
-    icon: BarChart3,
-    title: 'Analyse & reporting',
-    desc: 'Tableaux de bord clairs pour suivre vos performances, comprendre vos visiteurs et ajuster votre stratégie.',
+    icon: HeartPulse,
+    title: 'Suivi santé visuelle',
+    desc: 'Programme de suivi annuel avec rappels personnalisés pour préserver votre capital visuel sur le long terme.',
   },
 ] as const
 
 const description =
-  'Création de site, SEO, identité visuelle, développement sur mesure — découvrez nos services pour développer votre activité en ligne.'
+  'Examens de vue, lunettes de vue et soleil, lentilles de contact, optique enfant — découvrez tous les services de Rodolphe Optique à Cotonou.'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -97,9 +97,9 @@ export function ServicesPage() {
 
       <PageHero
         eyebrow="Services"
-        title="Tout ce qu'il faut pour réussir en ligne"
-        description="Des prestations complètes, de la conception à l'accompagnement continu, adaptées à toutes les tailles d'entreprise."
-        image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&q=80"
+        title="Des solutions complètes pour votre vue"
+        description="De l'examen de vue au suivi régulier, en passant par le choix de montures et l'adaptation de lentilles, nous prenons soin de vos yeux à chaque étape."
+        image="/images/ivan-cruz-oQdpelfogoo-unsplash.jpg"
         breadcrumb="Services"
       />
 

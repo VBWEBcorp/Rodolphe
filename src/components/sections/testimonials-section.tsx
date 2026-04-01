@@ -4,66 +4,66 @@ import { SectionTitle } from '@/components/ui/section-title'
 
 const topRow = [
   {
-    name: 'Marie D.',
-    role: 'Boulangerie Le Fournil',
-    quote: "Depuis le nouveau site, je reçois 3 fois plus d'appels. Les clients nous trouvent enfin sur Google.",
+    name: 'Ariane K.',
+    role: 'Enseignante, Cotonou',
+    quote: "Depuis que j'ai mes nouvelles lunettes progressives, je n'ai plus de maux de tête. L'équipe a été d'une patience remarquable.",
     stars: 5,
   },
   {
-    name: 'Thomas L.',
-    role: 'Cabinet Conseil TLR',
-    quote: 'Un travail soigné, un site clair et professionnel. Mes prospects comprennent immédiatement ce que je propose.',
+    name: 'Gérard A.',
+    role: 'Chef d\'entreprise, Porto-Novo',
+    quote: 'Un service irréprochable. L\'examen de vue était très complet et on m\'a conseillé des verres parfaitement adaptés à mon travail sur écran.',
     stars: 5,
   },
   {
-    name: 'Camille B.',
-    role: 'Atelier Camille',
-    quote: "Le site reflète parfaitement l'univers de ma marque. J'ai gagné en crédibilité auprès de mes clients.",
+    name: 'Félicité D.',
+    role: 'Étudiante, Abomey-Calavi',
+    quote: 'J\'adore mes nouvelles montures ! Le choix est immense et les prix sont honnêtes. Je recommande à tous mes amis.',
     stars: 5,
   },
   {
-    name: 'Laurent M.',
-    role: 'LM Rénovation',
-    quote: 'En trois mois, mon chiffre a augmenté de 40 %. Le site et le SEO font vraiment la différence.',
+    name: 'Romuald T.',
+    role: 'Médecin, Cotonou',
+    quote: 'En tant que professionnel de santé, j\'apprécie la rigueur des examens et la qualité des équipements. Rodolphe Optique est une référence.',
     stars: 5,
   },
   {
-    name: 'Nadia K.',
-    role: 'Agence NovaTour',
-    quote: "Un accompagnement au top, des délais respectés et un résultat qui dépasse mes attentes.",
+    name: 'Christelle M.',
+    role: 'Comptable, Parakou',
+    quote: "Mes lentilles de contact sont d'un confort incroyable. L'adaptation a été faite avec beaucoup de soin et de professionnalisme.",
     stars: 5,
   },
 ] as const
 
 const bottomRow = [
   {
-    name: 'Sophie R.',
-    role: 'Studio Pilates Zen',
-    quote: "L'équipe a su capter l'ambiance de mon studio. Les réservations ont décollé.",
+    name: 'Brice H.',
+    role: 'Architecte, Cotonou',
+    quote: "Les lunettes de soleil polarisées que j'ai achetées sont de qualité exceptionnelle. Parfaites pour conduire à Cotonou.",
     stars: 5,
   },
   {
-    name: 'Pierre V.',
-    role: 'Transports Vallée',
-    quote: "Un investissement rentabilisé en quelques semaines. Des contacts qualifiés chaque jour.",
+    name: 'Nadège S.',
+    role: 'Mère de famille, Bohicon',
+    quote: 'J\'ai équipé toute ma famille ici. Les lunettes des enfants sont solides et bien ajustées. Le suivi après-vente est top.',
     stars: 5,
   },
   {
-    name: 'Julie A.',
-    role: "Les Jardins d'Alice",
-    quote: "Ils ont transformé notre présence en ligne. Le site est magnifique et nos ventes ont triplé.",
+    name: 'Isidore F.',
+    role: 'Avocat, Cotonou',
+    quote: "Un cadre élégant, un accueil professionnel et des montures de créateurs qu'on ne trouve pas ailleurs au Bénin.",
     stars: 5,
   },
   {
-    name: 'Franck G.',
-    role: 'Studio FG',
-    quote: "Design épuré, navigation fluide, exactement ce que je voulais pour présenter mes projets.",
+    name: 'Sènan L.',
+    role: 'Informaticien, Cotonou',
+    quote: "Les verres anti-lumière bleue ont changé ma vie devant l'ordinateur. Merci pour les conseils avisés !",
     stars: 4,
   },
   {
-    name: 'Émilie T.',
-    role: 'Clinique Vétérinaire du Parc',
-    quote: "Nos clients trouvent toutes les infos facilement. La prise de rendez-vous a changé notre quotidien.",
+    name: 'Grâce O.',
+    role: 'Pharmacienne, Ouidah',
+    quote: 'Rapide, efficace et à l\'écoute. Mes verres progressifs étaient prêts en trois jours. Service exceptionnel.',
     stars: 5,
   },
 ] as const
@@ -86,7 +86,6 @@ function TestimonialCard({
 }) {
   return (
     <figure className="flex w-[300px] shrink-0 flex-col rounded-xl border border-border/60 bg-card/80 px-5 py-4 shadow-[var(--shadow-xs)] ring-1 ring-foreground/[0.03] backdrop-blur-sm">
-      {/* Header: stars + Google logo */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-0.5">
           {Array.from({ length: 5 }).map((_, i) => (
@@ -100,14 +99,12 @@ function TestimonialCard({
         <GoogleLogo />
       </div>
 
-      {/* Quote */}
       <blockquote className="mt-3 flex-1">
         <p className="text-[13px] leading-relaxed text-foreground/85">
           "{testimonial.quote}"
         </p>
       </blockquote>
 
-      {/* Author */}
       <figcaption className="mt-3 flex items-center gap-2.5 border-t border-border/40 pt-3">
         <div className="flex size-7 items-center justify-center rounded-full bg-primary/10 text-[11px] font-bold text-primary">
           {testimonial.name.charAt(0)}
@@ -161,7 +158,7 @@ export function TestimonialsSection() {
         <SectionTitle
           eyebrow="Témoignages"
           title="Ils nous font confiance"
-          description="Des entreprises de tous horizons qui ont gagné en visibilité et en crédibilité."
+          description="Des milliers de clients satisfaits à Cotonou et dans tout le Bénin nous recommandent."
         />
       </div>
 

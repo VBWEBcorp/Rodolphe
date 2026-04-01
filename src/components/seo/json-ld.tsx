@@ -20,18 +20,37 @@ export function organizationJsonLd() {
 export function localBusinessJsonLd() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'Optician',
     name: siteConfig.name,
     url: siteConfig.url,
     telephone: siteConfig.phone,
     email: siteConfig.email,
     image: siteConfig.ogImage,
+    priceRange: '$$',
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '08:00',
+        closes: '18:30',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'Saturday',
+        opens: '09:00',
+        closes: '14:00',
+      },
+    ],
     address: {
       '@type': 'PostalAddress',
       streetAddress: siteConfig.address.street,
       addressLocality: siteConfig.address.city,
-      postalCode: siteConfig.address.postalCode,
       addressCountry: siteConfig.address.country,
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 6.3654,
+      longitude: 2.4075,
     },
   }
 }

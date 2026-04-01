@@ -6,28 +6,20 @@ import { Button } from '@/components/ui/button'
 
 const images = [
   {
-    src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=720&q=80',
-    alt: "Vue de l'espace de travail",
+    src: '/images/ivan-cruz-oQdpelfogoo-unsplash.jpg',
+    alt: 'Collection de montures variées',
   },
   {
-    src: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=720&q=80',
-    alt: 'Réunion créative en équipe',
+    src: '/images/chuttersnap-G8ioIHUDfNc-unsplash.jpg',
+    alt: 'Présentoir de montures en boutique',
   },
   {
-    src: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=720&q=80',
-    alt: 'Collaboration autour du projet',
+    src: '/images/harpreet-singh-XbPhaw-x0i0-unsplash.jpg',
+    alt: 'Essayage de lunettes en magasin',
   },
   {
-    src: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=720&q=80',
-    alt: 'Intérieur de nos locaux',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=720&q=80',
-    alt: 'Présentation client',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=720&q=80',
-    alt: "Détail de l'ambiance bureau",
+    src: '/images/scott-van-daalen-UsALNdok2m4-unsplash.jpg',
+    alt: 'Mur de montures colorées',
   },
 ] as const
 
@@ -71,7 +63,7 @@ export function GalleryCarousel() {
               Galerie
             </p>
             <h2 className="font-display text-2xl tracking-tight text-foreground sm:text-3xl">
-              En coulisses
+              Notre boutique en images
             </h2>
           </div>
           <div className="hidden gap-2 sm:flex">
